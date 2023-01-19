@@ -13,7 +13,7 @@ func init() {
 func main() {
 	r := gin.Default()
 
-	r.GET("/", controllers.CompareDates)
+	r.GET("/when/:year", controllers.CompareDates)
 
 	r.Run()
 }
