@@ -12,7 +12,7 @@ func CompareDates(c *gin.Context) {
 	yearParam := c.Param("year")
 	year, err := strconv.Atoi(yearParam)
 	if err != nil {
-
+		logger.Error("Data entered in the wrong format")
 	}
 
 	now := time.Now()
