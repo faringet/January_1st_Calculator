@@ -21,10 +21,10 @@ func CompareDates(c *gin.Context) {
 	// Разница отрицательна или положительна?
 	if difference > 0 {
 		// Введенный год в будущем
-		c.String(200, "There are %d days left until January 1st, %d", int(difference.Hours()/24), year)
+		c.String(200, "Days left: %d", int(difference.Hours()/24))
 	} else {
 		// Введенный год в прошлом (difference * -1 чтобы вывод был в норм виде)
 		difference = difference * -1
-		c.String(200, "%d days have passed since January 1st, %d", int(difference.Hours()/24), year)
+		c.String(200, "Days gone: %d", int(difference.Hours()/24))
 	}
 }
