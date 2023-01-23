@@ -5,7 +5,7 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
-func PingMiddleware() gin.HandlerFunc {
+func HeaderChecker() gin.HandlerFunc {
 	return func(c *gin.Context) {
 		logger := logging.GetLogger()
 		// Проверка наличие заголовка X-PING в запросе

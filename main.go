@@ -18,9 +18,7 @@ func init() {
 func main() {
 	r := gin.Default()
 
-	r.Use(middleware.PingMiddleware())
-
+	r.Use(middleware.HeaderChecker())
 	r.GET("/when/:year", controllers.CompareDates)
-
 	r.Run()
 }
