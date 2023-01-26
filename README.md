@@ -2,13 +2,13 @@
 С помощью этого веб-приложения можно узнать сколько дней осталось или прошло до 1-го января введенного года.
 ___
 # Route
-Маршрут имеет вид - `http://localhost:3000/when/введенный параметр`
+Маршрут имеет вид - `http://localhost:8080/when/введенный параметр`
 
 Напрмиер при вводе:
 
-• `http://localhost:3000/when/2030`, output - `Days left: 2535`
+• `http://localhost:8080/when/2030`, output - `Days left: 2535`
 
-• `http://localhost:3000/when/2007`, output - `Days gone: 5865`
+• `http://localhost:8080/when/2007`, output - `Days gone: 5865`
 
 
 ___
